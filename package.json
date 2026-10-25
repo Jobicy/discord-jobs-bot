@@ -1,0 +1,20 @@
+{
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "node --test tests/*.test.mjs",
+    "check": "node --check src/index.js && node --check src/discord.js && node --check src/jobicy.js && node --check src/storage.js"
+  },
+  "name": "discord-jobs-bot",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "license": "MIT",
+  "description": "Send remote job alerts to Discord with webhooks, hourly synchronization and persistent deduplication using the Jobicy API.",
+  "engines": {
+    "node": ">=22"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Jobicy/discord-jobs-bot.git"
+  }
+}
